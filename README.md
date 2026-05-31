@@ -47,5 +47,6 @@ IBM-Concert/
 │   ├── vm-linux-x86/
 │   ├── vm-linux-power/
 │   └── openshift/
-├── scripts/
+├── integraciones/
+│   └── watsonx-ai/
 └── troubleshooting/
