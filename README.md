@@ -26,9 +26,9 @@ El repositorio está orientado a los siguientes escenarios:
 |---|---|---|---|
 | Descarga airgap para VM Linux | Máquina virtual o servidor Linux con internet | x86_64 | Disponible |
 | Descarga airgap para VM Linux | Máquina virtual o servidor Linux con internet | Power / ppc64le | Pendiente |
-| Descarga airgap para OpenShift | Bastion o servidor con acceso a internet | x86_64 / ppc64le | Pendiente |
+| Descarga airgap para OpenShift | Bastion o servidor con acceso a internet | x86_64 / ppc64le | Disponible |
 | Instalación Concert en VM Linux | Servidor destino air-gapped | x86_64 | Pendiente |
-| Instalación Concert en OpenShift | Cluster OpenShift air-gapped | x86_64 / ppc64le | Pendiente |
+| Instalación Concert en OpenShift | Cluster OpenShift air-gapped | x86_64 / ppc64le | Disponible |
 
 ---
 
