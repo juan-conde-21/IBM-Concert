@@ -389,6 +389,7 @@ Ejemplo para descargar IBM Concert, Concert Workflows y Concert Data Apps:
 INSTALL_CONCERT=TRUE
 INSTALL_DATAAPPS=TRUE
 INSTALL_WORKFLOWS=TRUE
+WORKFLOWS_INSTALL_ALL_INTEGRATIONS=FALSE
 ```
 
 Ejemplo para descargar únicamente IBM Concert:
