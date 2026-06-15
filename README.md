@@ -24,18 +24,18 @@ Este repositorio busca documentar procedimientos operativos para:
 
 El repositorio está orientado a los siguientes escenarios:
 
-| Escenario | Plataforma | Arquitectura | Estado |
-|---|---|---|---|
-| Descarga airgap para VM Linux | Máquina virtual o servidor Linux con internet | x86_64 | Disponible |
-| Descarga airgap para VM Linux | Máquina virtual o servidor Linux con internet | Power / ppc64le | Pendiente |
-| Descarga airgap para OpenShift | Bastion o servidor con acceso a internet | x86_64 / ppc64le | Disponible |
-| Instalación Concert en VM Linux con internet | Máquina virtual Red Hat Enterprise Linux | x86_64 | Disponible |
-| Instalación Concert en VM Linux air-gapped | Servidor destino air-gapped | x86_64 | Pendiente |
-| Instalación Concert en VM Linux | Servidor destino Linux | Power / ppc64le | Pendiente |
-| Instalación Concert en OpenShift | Cluster OpenShift conectado o air-gapped | x86_64 / ppc64le | Disponible |
-| Desinstalación Concert en VM Linux | Máquina virtual Red Hat Enterprise Linux | x86_64 | Disponible |
-| Integraciones | watsonx.ai | VM / OpenShift | Disponible |
-| Troubleshooting | VM / OpenShift | x86_64 / ppc64le | En construcción |
+| Escenario | Plataforma | Arquitectura | Estado | Documento |
+|---|---|---|---|---|
+| Descarga airgap para VM Linux | Máquina virtual o servidor Linux con internet | x86_64 | Disponible | [Ver procedimiento](airgap/descarga/vm-linux-x86/descarga-concert-airgap-vm-linux-x86.md) |
+| Descarga airgap para VM Linux | Máquina virtual o servidor Linux con internet | Power / ppc64le | Pendiente | Pendiente |
+| Descarga airgap para OpenShift | Bastion o servidor con acceso a internet | x86_64 / ppc64le | Disponible | [Ver procedimiento](airgap/descarga/openshift/descarga-concert-airgap-openshift.md) |
+| Instalación Concert en VM Linux con internet | Máquina virtual Red Hat Enterprise Linux | x86_64 | Disponible | [Ver procedimiento](instalacion/vm-linux-x86/instalacion-ibm-concert-vm-rhel9-online.md) |
+| Instalación Concert en VM Linux air-gapped | Servidor destino air-gapped | x86_64 | Pendiente | Pendiente |
+| Instalación Concert en VM Linux | Servidor destino Linux | Power / ppc64le | Pendiente | Pendiente |
+| Instalación Concert en OpenShift | Cluster OpenShift conectado o air-gapped | x86_64 / ppc64le | Disponible | [Ver procedimiento](instalacion/openshift/instalacion-concert-openshift.md) |
+| Desinstalación Concert en VM Linux | Máquina virtual Red Hat Enterprise Linux | x86_64 | Disponible | [Ver procedimiento](desinstalacion/vm-linux-x86/desinstalacion-ibm-concert-vm-rhel9.md) |
+| Integración con watsonx.ai | VM / OpenShift | x86_64 / ppc64le | Disponible | [Ver procedimiento](integraciones/watsonx-ai/configuracion-watsonxai-concert.md) |
+| Troubleshooting | VM / OpenShift | x86_64 / ppc64le | En construcción | Pendiente |
 
 ---
 
@@ -45,27 +45,51 @@ El repositorio está orientado a los siguientes escenarios:
 IBM-Concert/
 ├── README.md
 ├── airgap/
+│   ├── README.md
 │   ├── descarga/
 │   │   ├── vm-linux-x86/
+│   │   │   └── descarga-concert-airgap-vm-linux-x86.md
 │   │   ├── vm-linux-power/
 │   │   └── openshift/
+│   │       └── descarga-concert-airgap-openshift.md
 │   └── validacion/
 ├── instalacion/
+│   ├── README.md
 │   ├── vm-linux-x86/
+│   │   └── instalacion-ibm-concert-vm-rhel9-online.md
 │   ├── vm-linux-power/
 │   └── openshift/
+│       └── instalacion-concert-openshift.md
 ├── desinstalacion/
+│   ├── README.md
 │   ├── vm-linux-x86/
+│   │   └── desinstalacion-ibm-concert-vm-rhel9.md
 │   ├── vm-linux-power/
 │   └── openshift/
 ├── integraciones/
+│   ├── README.md
 │   └── watsonx-ai/
+│       └── configuracion-watsonxai-concert.md
 └── troubleshooting/
+    └── README.md
 ```
 
 ---
 
-## 4. Descripción de carpetas
+## 4. Procedimientos disponibles
+
+| Categoría | Procedimiento | Ruta |
+|---|---|---|
+| Airgap | Descarga airgap para VM Linux x86 | [`airgap/descarga/vm-linux-x86/descarga-concert-airgap-vm-linux-x86.md`](airgap/descarga/vm-linux-x86/descarga-concert-airgap-vm-linux-x86.md) |
+| Airgap | Descarga airgap para OpenShift | [`airgap/descarga/openshift/descarga-concert-airgap-openshift.md`](airgap/descarga/openshift/descarga-concert-airgap-openshift.md) |
+| Instalación | Instalación Concert en VM RHEL 9 con internet | [`instalacion/vm-linux-x86/instalacion-ibm-concert-vm-rhel9-online.md`](instalacion/vm-linux-x86/instalacion-ibm-concert-vm-rhel9-online.md) |
+| Instalación | Instalación Concert en OpenShift | [`instalacion/openshift/instalacion-concert-openshift.md`](instalacion/openshift/instalacion-concert-openshift.md) |
+| Desinstalación | Desinstalación Concert en VM RHEL 9 | [`desinstalacion/vm-linux-x86/desinstalacion-ibm-concert-vm-rhel9.md`](desinstalacion/vm-linux-x86/desinstalacion-ibm-concert-vm-rhel9.md) |
+| Integraciones | Configuración de conexión con watsonx.ai | [`integraciones/watsonx-ai/configuracion-watsonxai-concert.md`](integraciones/watsonx-ai/configuracion-watsonxai-concert.md) |
+
+---
+
+## 5. Descripción de carpetas
 
 ### `airgap/`
 
@@ -149,7 +173,7 @@ Puede incluir:
 
 ---
 
-## 5. Convenciones de documentación
+## 6. Convenciones de documentación
 
 Cada procedimiento debe mantener un estilo técnico, claro y operativo.
 
@@ -179,7 +203,7 @@ Cuando corresponda, se debe separar claramente:
 
 ---
 
-## 6. Criterios de redacción
+## 7. Criterios de redacción
 
 Para mantener claridad en los procedimientos:
 
@@ -197,7 +221,7 @@ Para mantener claridad en los procedimientos:
 
 ---
 
-## 7. Seguridad
+## 8. Seguridad
 
 Los documentos no deben contener información sensible.
 
@@ -226,7 +250,7 @@ Initial password: generado durante la instalación y no documentado por segurida
 
 ---
 
-## 8. Recomendaciones generales
+## 9. Recomendaciones generales
 
 - Mantener la descarga airgap separada de la instalación.
 - Mantener la instalación separada de las integraciones.
@@ -239,7 +263,7 @@ Initial password: generado durante la instalación y no documentado por segurida
 
 ---
 
-## 9. Estado general
+## 10. Estado general
 
 Este repositorio se encuentra en construcción continua.
 
